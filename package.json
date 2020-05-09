@@ -1,0 +1,23 @@
+{
+  "name": "time-signal-discord-bot",
+  "version": "1.0.0",
+  "description": "A time signal bot for Discord",
+  "main": "index.js",
+  "repository": "https://github.com/hal-shu-sato/time-signal-discord-bot.git",
+  "author": "ato lash",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "ffmpeg-static": "^4.2.1",
+    "log4js": "^6.2.1",
+    "node-cron": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.11.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
