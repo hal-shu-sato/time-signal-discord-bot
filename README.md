@@ -58,6 +58,10 @@ I don't test on Mac and Linux.
 - Homepage: http://halshusato.starfree.jp/
 - Twitter: https://twitter.com/hal_shu_sato
 
+# Credit
+
+The audio notification uses sound file from [OtoLogic](https://otologic.jp). ([CC BY 4.0](https://github.com/hal-shu-sato/time-signal-discord-bot/blob/master/audio/LICENSE))
+
 # License
 
 "Time signal for Discord" is under [MIT license](https://github.com/hal-shu-sato/time-signal-discord-bot/blob/master/LICENSE).
