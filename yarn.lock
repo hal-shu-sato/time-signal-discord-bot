@@ -26,28 +26,28 @@
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-"@discordjs/node-pre-gyp@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@discordjs/node-pre-gyp/-/node-pre-gyp-0.4.1.tgz#93c8d1dc391aef8ff116b6daa7bbeffd152f1018"
-  integrity sha512-PLYLPG3R+m9QlMROOjdy2htQq54g6f9vRb1xPfZ97CL53yj0uNTfpB/jtY/AXY6OKNtZtrre5SKjei8Hcc44HQ==
+"@discordjs/node-pre-gyp@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@discordjs/node-pre-gyp/-/node-pre-gyp-0.4.2.tgz#37dd27f8d353eeb87372fcce059c5249550b37ab"
+  integrity sha512-V239Czn+DXFGLhhuccwEDBoTdgMGrRu30dOlzm1GzrSIjwFj01ZJerNX7x+CEX1NG1Q/1gGfOOkeZFNHjycrRA==
   dependencies:
     detect-libc "^1.0.3"
     https-proxy-agent "^5.0.0"
     make-dir "^3.1.0"
-    node-fetch "^2.6.1"
+    node-fetch "^2.6.5"
     nopt "^5.0.0"
-    npmlog "^5.0.0"
+    npmlog "^5.0.1"
     rimraf "^3.0.2"
     semver "^7.3.5"
-    tar "^6.1.8"
+    tar "^6.1.11"
 
-"@discordjs/opus@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@discordjs/opus/-/opus-0.6.0.tgz#2afe764d305945ea07fb150fe037eb9fe2e45d13"
-  integrity sha512-Xuw8OP9BJgObEBs/SgxixnKj+y+w9st45uOAJ+cGegUGwxAIR4J7sQt3Y1J3G9SGGe82+MTxvy7sg1/QUkigcg==
+"@discordjs/opus@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@discordjs/opus/-/opus-0.7.0.tgz#69e9611a6412ea470f8e640f54478da89326ca3b"
+  integrity sha512-3Xxa3dh7taSDwBAR5fLALZ/KTxvbMmHCMxYLYve6NlPO7Ms1CLmKqp/R4ZoVzkRGQVUVWEhaB1s0v9jfa2tfDg==
   dependencies:
-    "@discordjs/node-pre-gyp" "^0.4.1"
-    node-addon-api "^4.0.0"
+    "@discordjs/node-pre-gyp" "^0.4.2"
+    node-addon-api "^4.2.0"
 
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
@@ -786,10 +786,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-node-addon-api@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-4.1.0.tgz#f1722f1f60793584632ffffb79e12ca042c48bd0"
-  integrity sha512-Zz1o1BDX2VtduiAt6kgiUl8jX1Vm3NMboljFYKQJ6ee8AGfiTvM2mlZFI3xPbqjs80rCQgiVJI/DjQ/1QJ0HwA==
+node-addon-api@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-4.2.0.tgz#117cbb5a959dff0992e1c586ae0393573e4d2a87"
+  integrity sha512-eazsqzwG2lskuzBqCGPi7Ac2UgOoMz8JVOXVhTvvPDYhthvNpefx8jWD8Np7Gv+2Sz0FlPWZk0nJV0z598Wn8Q==
 
 node-cron@^3.0.0:
   version "3.0.0"
@@ -803,6 +803,13 @@ node-fetch@^2.6.1:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.2.tgz#986996818b73785e47b1965cc34eb093a1d464d0"
   integrity sha512-aLoxToI6RfZ+0NOjmWAgn9+LEd30YCkJKFSyWacNZdEKTit/ZMcKjGkTRo8uWEsnIb/hfKecNPEbln02PdWbcA==
 
+node-fetch@^2.6.5:
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.6.tgz#1751a7c01834e8e1697758732e9efb6eeadfaf89"
+  integrity sha512-Z8/6vRlTUChSdIgMa51jxQ4lrw/Jy5SOW10ObaA47/RElsAN2c5Pn8bTgFGWn/ibwzXTE8qwr1Yzx28vsecXEA==
+  dependencies:
+    whatwg-url "^5.0.0"
+
 nopt@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-5.0.0.tgz#530942bb58a512fccafe53fe210f13a25355dc88"
@@ -810,7 +817,7 @@ nopt@^5.0.0:
   dependencies:
     abbrev "1"
 
-npmlog@^5.0.0:
+npmlog@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-5.0.1.tgz#f06678e80e29419ad67ab964e0fa69959c1eb8b0"
   integrity sha512-AqZtDUWOMKs1G/8lwylVjrdYgqA4d9nu8hc+0gzRxlDb1I10+FHBGMXs6aiQHFdCUUlqH99MUMuLfzWDNDtfxw==
@@ -1046,7 +1053,7 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tar@^6.1.8:
+tar@^6.1.11:
   version "6.1.11"
   resolved "https://registry.yarnpkg.com/tar/-/tar-6.1.11.tgz#6760a38f003afa1b2ffd0ffe9e9abbd0eab3d621"
   integrity sha512-an/KZQzQUkZCkuoAA64hM92X0Urb6VpRhAFllDzz44U2mcD5scmT3zBc4VgVpkugF580+DQn8eAFSyoQt0tznA==
@@ -1062,6 +1069,11 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
 
 tweetnacl@^1.0.3:
   version "1.0.3"
@@ -1106,6 +1118,19 @@ v8-compile-cache@^2.0.3:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
+
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 which@^2.0.1:
   version "2.0.2"
