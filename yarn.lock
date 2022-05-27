@@ -677,10 +677,10 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
-log4js@^6.5.1:
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/log4js/-/log4js-6.5.1.tgz#06f771ae231c8e930ac2c7381242c8cdeff0dca1"
-  integrity sha512-z1hRRe5DDPzsP73PgN/GYmeSbIAl/g9kX3GLjABCpcU1ojns8S4cyjpJ21jU1P7z1wWkm69PjyMcEGqYYdDqaA==
+log4js@^6.5.2:
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/log4js/-/log4js-6.5.2.tgz#9ae371e5b3cb3a3a209c24686e5547f8670834e5"
+  integrity sha512-DXtpNtt+KDOMT7RHUDIur/WsSA3rntlUh9Zg4XCdV42wUuMmbFkl38+LZ92Z5QvQA7mD5kAVkLiBSEH/tvUB8A==
   dependencies:
     date-format "^4.0.10"
     debug "^4.3.4"
