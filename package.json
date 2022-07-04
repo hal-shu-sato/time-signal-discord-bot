@@ -7,7 +7,7 @@
   "author": "ato lash",
   "license": "MIT",
   "dependencies": {
-    "@discordjs/opus": "^0.7.0",
+    "@discordjs/opus": "^0.8.0",
     "discord.js": "^12.2.0",
     "dotenv": "^16.0.1",
     "ffmpeg-static": "^4.4.1",
