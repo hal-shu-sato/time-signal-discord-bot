@@ -41,35 +41,35 @@ client.on("message", async (msg) => {
     if (!msg.member.voice.channel) {
       msg.reply("You need to join a voice channel first!");
       logger.info(
-        "Requested to set time signals but requester don't join any voice channel."
+        "Requested to set time signals but requester don't join any voice channel.",
       );
       return;
     }
     if (!msg.member.voice.channel.joinable) {
       msg.reply("I cannot join your voice channel!");
       logger.info(
-        "Requested to set time signals but I can't join the voice channel."
+        "Requested to set time signals but I can't join the voice channel.",
       );
       return;
     }
     if (!msg.member.voice.channel.speakable) {
       msg.reply("I cannot speak in your voice channel!");
       logger.info(
-        "Requested to set time signals but I can't speak the voice channel."
+        "Requested to set time signals but I can't speak the voice channel.",
       );
       return;
     }
     if (isAddedInList(msg.member.voice.channel.id)) {
       msg.reply("Already setted time signals.");
       logger.info(
-        "Requested to set time signals but already setted time signals."
+        "Requested to set time signals but already setted time signals.",
       );
     } else {
       joinList.push({ text: msg.channel, voice: msg.member.voice.channel });
       if (isAddedInList(msg.member.voice.channel.id)) {
         msg.reply("Successful in setting time signals.");
         logger.info(
-          `Successful in setting time signals of ${msg.member.voice.channel.name} in ${msg.guild}.`
+          `Successful in setting time signals of ${msg.member.voice.channel.name} in ${msg.guild}.`,
         );
         logger.debug(joinList);
       } else {
@@ -84,7 +84,7 @@ client.on("message", async (msg) => {
     if (!isAddedInList(msg.member.voice.channel.id)) {
       msg.reply("Already canceled time signals.");
       logger.info(
-        "Requested to cancel time signals but already canceled time signals."
+        "Requested to cancel time signals but already canceled time signals.",
       );
     } else {
       const indexNumber = joinList.findIndex((element) => {
@@ -94,15 +94,15 @@ client.on("message", async (msg) => {
       if (!isAddedInList(msg.member.voice.channel.id)) {
         msg.reply("Successful in canceling time signals.");
         logger.info(
-          `Successful in canceling time signals of ${msg.member.voice.channel.name} in ${msg.guild}.`
+          `Successful in canceling time signals of ${msg.member.voice.channel.name} in ${msg.guild}.`,
         );
         logger.debug(joinList);
       } else {
         msg.reply(
-          "Couldn't remove from joining list. Please contact a developer."
+          "Couldn't remove from joining list. Please contact a developer.",
         );
         logger.error(
-          `Couldn't remove ${msg.member.voice.channel.name} in ${msg.guild} from joining list.`
+          `Couldn't remove ${msg.member.voice.channel.name} in ${msg.guild} from joining list.`,
         );
         logger.debug(joinList);
       }
@@ -117,7 +117,7 @@ client.on("message", async (msg) => {
       });
       const now = new Date();
       msg.channel.send(
-        `It is ${now.getHours()}:${now.getMinutes()} now!\nSignal sound: Otologic ( https://otologic.jp )`
+        `It is ${now.getHours()}:${now.getMinutes()} now!\nSignal sound: Otologic ( https://otologic.jp )`,
       );
       dispatcher.on("finish", () => {
         dispatcher.destroy();
@@ -141,14 +141,14 @@ cron.schedule(
         voiceConnectionArray.push(connection);
         connection.play(broadcast);
         logger.info(
-          `Connected to ${value.voice.name} in ${value.voice.guild}.`
+          `Connected to ${value.voice.name} in ${value.voice.guild}.`,
         );
       } else {
         value.text.send("You need to be joining a voice channel!");
       }
     });
   },
-  options
+  options,
 );
 cron.schedule(
   `57 59 * * * *`,
@@ -162,7 +162,7 @@ cron.schedule(
       voiceConnectionArray.length = 0;
     });
   },
-  options
+  options,
 );
 cron.schedule(
   `0 0 * * * *`,
@@ -171,12 +171,12 @@ cron.schedule(
     client.user.setPresence({ activity: { name: `${now.getHours()}時` } });
     joinList.forEach((value) => {
       value.text.send(
-        `It is ${now.getHours()}:00 now!\nSignal sound: Otologic ( https://otologic.jp )`
+        `It is ${now.getHours()}:00 now!\nSignal sound: Otologic ( https://otologic.jp )`,
       );
     });
     logger.info(`Sent a time signal.`);
   },
-  options
+  options,
 );
 
 client.login();
