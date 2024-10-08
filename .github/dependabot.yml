@@ -13,4 +13,5 @@ updates:
     groups:
       eslint:
         patterns:
+          - "@eslint/*"
           - "eslint*"
