@@ -12,7 +12,7 @@
     "dotenv": "^16.6.0",
     "ffmpeg-static": "^5.2.0",
     "log4js": "^6.9.1",
-    "node-cron": "^4.1.1"
+    "node-cron": "^4.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
