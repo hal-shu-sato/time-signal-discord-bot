@@ -5,7 +5,7 @@ Time signal for Discord notices time every hour, using audio and text.
 # Requirement
 
 - Node.js 12.13.0
-- npm 6.12.0 or yarn 1.22.4
+- pnpm 11.22.0
 - discord.js 12.2.0
   - @discordjs/opus 0.3.2
 - ffmpeg-static 4.2.1
@@ -14,38 +14,23 @@ Time signal for Discord notices time every hour, using audio and text.
 
 # Installation
 
-## yarn
-
 ```bash
 git clone https://github.com/hal-shu-sato/time-signal-discord-bot
-yarn add
-```
-
-## npm
-
-```bash
-git clone https://github.com/hal-shu-sato/time-signal-discord-bot
-npm install
+cd time-signal-discord-bot
+pnpm install
 ```
 
 # Usage
 
 ## Batch (The easiest way)
 
-If you use yarn, run "start.bat"
+Run "start.bat"
 
-## Bash (yarn)
-
-```bash
-cd time-signal-discord-bot
-yarn run start
-```
-
-## Bash (npm)
+## Bash
 
 ```bash
 cd time-signal-discord-bot
-npm run start
+pnpm run start
 ```
 
 # Note

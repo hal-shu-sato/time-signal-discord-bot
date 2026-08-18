@@ -1,2 +1,2 @@
-yarn run start
+pnpm run start
 pause
